@@ -8,20 +8,26 @@
     font-family: 'Merriweather', serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
-    /* background-color: #FFF; */
 }
+
+.bg-primary {
+    width: 70%;
+    max-width: 1320px;
+    height: 600px;
+}
+
+.bg-primary-color {
+    background-color: #FFF;
+}
+
 
 /* Banner section styles */
 .banner-container {
     background-image: url('../images/banner-Image.png');
     /* background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%); */
-    width: 70%;
-    max-width: 1320px;
-    height: 600px;
-    margin: 50px auto;
-    text-align: center;
+    margin: 50px auto 0;
     border-radius: 16px;
-   
+    text-align: center;
 }
 
 .banner-container .banner-items {
@@ -33,20 +39,61 @@
 
 .banner-container .banner-items .banner-title {
     color: #FFF;
-    text-align: center;
+    /* text-align: center; */
     font-family: Merriweather;
     font-size: 32px;
     font-weight: 400;
-    /* background-color: aqua; */
 }
 
 .banner-container .banner-items .banner-heading {
     color: #FFF;
-    text-align: center;
+    /* text-align: center; */
     font-family: Merriweather;
     font-size: 72px;
     font-weight: 900;
     line-height: 95px;
     max-width: 630px;
     /* background-color: antiquewhite; */
+}
+
+/* Offer deals section styles */
+.deal-container {
+    text-align: center;
+    margin: 120px auto 0;
+}
+
+.deal-container .deal-items {}
+
+.deal-container .deal-items .offer-title {
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 88px;
+    font-weight: 700;
+}
+
+.deal-container .deal-items .deal-title {
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 48px;
+}
+
+.deal-container .deal-items .categori-title {
+    color: #070211;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.deal-container .deal-img{
+    margin-top: 48px;
+}
+
+.deal-container .deal-img img{
+    max-width: 800px;
 }
