@@ -204,7 +204,8 @@ span {
     font-weight: 500;
 }
 
-.best-offer-container .best-offer-contents .offer-deadline .deadline-heading {
+.best-offer-container .best-offer-contents .offer-deadline .deadline-heading,
+.portfolio-heading {
     color: #070211;
     font-family: Merriweather;
     font-size: 48px;
@@ -260,7 +261,8 @@ span {
 
 .holiday-container .holiday-contents .holiday-texts {}
 
-.holiday-container .holiday-contents .holiday-texts .holiday-title {
+.holiday-container .holiday-contents .holiday-texts .holiday-title,
+.portfolio-title {
     color: #070211;
     font-family: Inter;
     font-size: 24px;
@@ -300,4 +302,36 @@ span {
     padding: 0 0px 200px 0;
     /* background-color: aqua; */
 
+}
+
+/* Portfolio section styles */
+.portfolio-container {}
+
+.portfolio-container .portfolio-texts .portfolio-title {
+    color: #F00;
+    margin: 0;
+}
+
+.portfolio-container .portfolio-texts .portfolio-heading {
+    margin: 16px 0 0 0;
+}
+
+.portfolio-container .portfolio-texts .portfolio-description {
+    max-width: 800px;
+    margin: 18px 0 0 0;
+}
+
+.portfolio-container .image-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1320px;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.portfolio-container .image-container div {}
+
+.portfolio-container .image-container img {
+    width: 100%;
 }
