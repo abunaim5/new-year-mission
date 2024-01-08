@@ -183,6 +183,9 @@ span {
 /* Best offer section styles */
 .best-offer-container {
     max-height: 463px;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
 }
 
 .best-offer-container .best-offer-contents {
@@ -213,8 +216,16 @@ span {
     margin-top: 22px;
 }
 
+.best-offer-container .best-offer-contents .Celebrate-img {
+    border: 20px solid #F00;
+    border-radius: 100%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
 .best-offer-container .best-offer-contents .Celebrate-img img {
-    max-width: 360px;
+    /* max-width: 360px; */
+    /* display: inline; */
 }
 
 .best-offer-container .best-offer-contents .offer-year .year {
@@ -230,4 +241,63 @@ span {
 
 .best-offer-container .best-offer-contents .offer-year img {
     margin-top: 43px;
+}
+
+/* Holiday deal container styles */
+.holiday-container {
+    text-align: center;
+    width: 70%;
+    max-width: 1320px;
+    border-radius: 16px;
+    margin: 120px auto 0;
+    /* background-color: aqua; */
+    background-image: url('../images/person.png'), url('../images/red-rectangle.png');
+    background-repeat: no-repeat;
+    background-position: center right, bottom;
+}
+
+.holiday-container .holiday-contents {}
+
+.holiday-container .holiday-contents .holiday-texts {}
+
+.holiday-container .holiday-contents .holiday-texts .holiday-title {
+    color: #070211;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.holiday-container .holiday-contents .holiday-texts .holiday-heading {
+    color: #070211;
+    font-family: Merriweather;
+    font-size: 72px;
+    font-weight: 900;
+    margin-top: 16px;
+}
+
+.holiday-container .holiday-contents .holiday-texts .holiday-description {
+    max-width: 1068px;
+    margin: 28px auto 0;
+
+}
+
+/* .holiday-container .holiday-contents .discount{
+    display: flex;
+    align-items: center;
+} */
+
+.holiday-container .surprise-img {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    padding-right: 300px;
+    justify-content: left;
+}
+
+.holiday-container .surprise-img .discount {
+    /* margin: 0 200px 0 0; */
+    padding: 0 0px 200px 0;
+    /* background-color: aqua; */
+
 }
