@@ -25,7 +25,7 @@ span {
     background-color: #FFF;
 }
 
-.text-primary {
+.text-primary, .contact-info p, .copyright {
     color: rgba(7, 2, 17, 0.60);
     font-family: Inter;
     font-size: 20px;
@@ -259,9 +259,13 @@ span {
     background-position: center right, bottom;
 }
 
-.holiday-container .holiday-contents {}
+.holiday-container .holiday-contents {
+    /* padding: 60px; */
+}
 
-.holiday-container .holiday-contents .holiday-texts {}
+.holiday-container .holiday-contents .holiday-texts {
+    /* margin: 60px; */
+}
 
 .holiday-container .holiday-contents .holiday-texts .holiday-title,
 .portfolio-title {
@@ -392,3 +396,37 @@ span {
     cursor: pointer;
     margin: 0;
 }
+
+/* Footer section styles */
+footer{
+    background-color: #070211;
+    padding: 140px;
+    margin-top: 120px;
+}
+
+.contact{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 0 50px 0;
+
+}
+.contact p , .copyright p{
+    color:#FFF
+}
+
+.contact .contact-info p{}
+
+.social-icons{
+    text-align:center;
+    margin: 0 0 50px;
+}
+
+.copyright{
+    display:flex;
+    justify-content: space-between;
+}
+hr{
+    margin: 0 0 50px;
+    color: 1px solid rgba(255, 255, 255, 0.15);
+}
+
