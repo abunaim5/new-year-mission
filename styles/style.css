@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
     font-family: 'Merriweather', serif;
+    box-sizing: border-box;
 }
 
 .bg-primary {
@@ -59,6 +60,7 @@ span {
 .best-offer-container .best-offer-contents .Celebrate-img img:hover {
     padding: 0;
     transition: 1s;
+    box-shadow: 0 0 50px gray;
 }
 
 .portfolio-container .image-container img:hover {
@@ -69,6 +71,12 @@ span {
     box-shadow: 0 0 30px lightgrey;
     transition: 1s;
     cursor: grabbing;
+}
+
+.social-icons img:hover {
+    border: 5px solid lightgray;
+    border-radius: 100%;
+    transition: 1s;
 }
 
 /* Banner section styles */
@@ -139,6 +147,10 @@ span {
 
 .deal-container .deal-img img {
     max-width: 800px;
+}
+
+.span-text {
+    font-family: inter;
 }
 
 /* Welcome banner styles */
@@ -287,19 +299,24 @@ span {
 }
 
 .holiday-container .surprise-img {
-    background-image: url('../images/person.png'), url('../images/red-rectangle.png');
+    background-image: url('../images/box.png'), url('../images/person.png'), radial-gradient(49.96% 50% at 30% -50%, #000 0%, #FFF 100%), linear-gradient(100deg, #FFF 0%, #1D1D1B 100%), url('../images/red-rectangle.png');
     background-repeat: no-repeat;
-    background-position: top right, center bottom;
-    display: flex;
-    gap: 0px;
-    justify-content: space-around;
+    background-position: bottom left, top right, bottom left, bottom, bottom;
     margin-top: 70px;
-    padding-right: 350px;
+    border-radius: 16px;
     height: 662px;
+    opacity: 1, 0;
+    background-blend-mode: multiply, screen;
+    mix-blend-mode: multiply, screen;
+    /* mix-blend-mode: multiply; */
 }
 
 .holiday-container .surprise-img .discount {
-    margin: 80px 0 0;
+    text-align: right;
+}
+
+.holiday-container .surprise-img .discount img {
+    margin: 85px 285px 0 0;
 }
 
 /* Portfolio section styles */
@@ -358,28 +375,34 @@ span {
 }
 
 .newsletter-container .news-items .subscribe-field {
+    font-size: 0;
     margin: 50px 0 0 0;
 }
 
-.newsletter-container .news-items .subscribe-field input {
-    padding: 25px 40px;
+.newsletter-container .news-items .subscribe-field #email,
+#sub-btn {
+    display: inline-block;
     color: rgba(7, 2, 17, 0.30);
     font-family: Inter;
     font-size: 18px;
     font-weight: 400;
-    border: 0;
-    border-radius: 50px 0 0 50px;
+    width: 65%;
     margin: 0;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    padding: 25px 50px;
+    outline: none;
 }
 
 .newsletter-container .news-items .subscribe-field #sub-btn {
-    border-radius: 0 50px 50px 0;
     text-align: center;
     color: #FFF;
     font-weight: 600;
     background-color: #F00;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    width: 35%;
     cursor: pointer;
-    margin: 0;
 }
 
 /* Footer section styles */
