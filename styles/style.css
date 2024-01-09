@@ -299,15 +299,21 @@ span {
 }
 
 .holiday-container .surprise-img {
-    background-image: url('../images/box.png'), url('../images/person.png'), radial-gradient(49.96% 50% at 30% -50%, #000 0%, #FFF 100%), linear-gradient(100deg, #FFF 0%, #1D1D1B 100%), url('../images/red-rectangle.png');
+    background-image: url('../images/box.png'), url('../images/person.png'), radial-gradient(49.96% 50% at 30% -50%, #000 0%, #FFF 100%),
+        /*linear-gradient(100deg, #FFF 0%, #1D1D1B 100%),*/
+        url('../images/red-rectangle.png');
     background-repeat: no-repeat;
-    background-position: bottom left, top right, bottom left, bottom, bottom;
+    background-position: bottom left, top right, bottom left,
+        /*bottom,*/
+        bottom;
     margin-top: 70px;
     border-radius: 16px;
     height: 662px;
     opacity: 1, 0;
-    background-blend-mode: multiply, screen;
-    mix-blend-mode: multiply, screen;
+    background-blend-mode: multiply;
+    /*screen;*/
+    mix-blend-mode: multiply;
+    /*screen;*/
     /* mix-blend-mode: multiply; */
 }
 
@@ -382,7 +388,7 @@ span {
 .newsletter-container .news-items .subscribe-field #email,
 #sub-btn {
     display: inline-block;
-    color: rgba(7, 2, 17, 0.30);
+    color: gray;
     font-family: Inter;
     font-size: 18px;
     font-weight: 400;
