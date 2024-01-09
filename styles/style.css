@@ -61,13 +61,14 @@ span {
     transition: 1s;
 }
 
-.portfolio-container .image-container img:hover{
-    background-color:#F00;
+.portfolio-container .image-container img:hover {
+    background-color: #F00;
     border-top: 70px solid #F00;
     border-bottom: 20px solid #F00;
-    border-radius:16px;
+    border-radius: 16px;
     box-shadow: 0 0 30px lightgrey;
     transition: 1s;
+    cursor: grabbing;
 }
 
 /* Banner section styles */
@@ -123,7 +124,7 @@ span {
     margin-top: 48px;
 }
 
-.deal-container .deal-items .categori-title {
+.deal-container .deal-items .category-title {
     color: #070211;
     text-align: center;
     font-family: Inter;
@@ -205,21 +206,12 @@ span {
 }
 
 /* Best offer section styles */
-.best-offer-container {
-    /* max-height: 463px; */
-    /* display: flex; */
-    align-items: center;
-    justify-content: space-around;
-}
-
 .best-offer-container .best-offer-contents {
     display: flex;
     align-items: center;
     gap: 165px;
     justify-content: space-around;
 }
-
-/* .best-offer-container .best-offer-contents .offer-deadline {} */
 
 .best-offer-container .best-offer-contents .offer-deadline .deadline-title {
     font-family: Inter;
@@ -241,23 +233,11 @@ span {
     margin-top: 22px;
 }
 
-/* .best-offer-container .best-offer-contents .Celebrate-img {
-    border: 20px solid #F00;
-    border-radius: 100%;
-    margin: 0 auto;
-    padding: 25px;
-} */
-
 .best-offer-container .best-offer-contents .Celebrate-img img {
     border: 20px solid #F00;
     border-radius: 100%;
     margin: 0 auto;
     padding: 25px;
-}
-
-.best-offer-container .best-offer-contents .Celebrate-img img {
-    /* max-width: 360px; */
-    /* display: inline; */
 }
 
 .best-offer-container .best-offer-contents .offer-year .year {
@@ -281,21 +261,6 @@ span {
     max-width: 1320px;
     border-radius: 16px;
     margin: 120px auto 0;
-    background-image: url('../images/person.png'), url('../images/red-rectangle.png');
-    background-repeat: no-repeat;
-    background-position: center right, bottom;
-    /* background: radial-gradient(49.96% 50% at 50% 50.23%, #000 0%, #FFF 100%);
-    opacity: 0.3;
-    background-blend-mode: multiply;
-    mix-blend-mode: multiply; */
-}
-
-.holiday-container .holiday-contents {
-    /* padding: 60px; */
-}
-
-.holiday-container .holiday-contents .holiday-texts {
-    /* margin: 60px; */
 }
 
 .holiday-container .holiday-contents .holiday-texts .holiday-title,
@@ -321,23 +286,20 @@ span {
 
 }
 
-/* .holiday-container .holiday-contents .discount{
-    display: flex;
-    align-items: center;
-} */
-
 .holiday-container .surprise-img {
+    background-image: url('../images/person.png'), url('../images/red-rectangle.png');
+    background-repeat: no-repeat;
+    background-position: top right, center bottom;
     display: flex;
     gap: 0px;
-    align-items: center;
-    padding-right: 300px;
-    justify-content: left;
+    justify-content: space-around;
+    margin-top: 70px;
+    padding-right: 350px;
+    height: 662px;
 }
 
 .holiday-container .surprise-img .discount {
-    /* margin: 0 200px 0 0; */
-    padding: 0 0px 200px 0;
-
+    margin: 80px 0 0;
 }
 
 /* Portfolio section styles */
@@ -434,6 +396,11 @@ footer {
     margin: 0 0 50px 0;
 }
 
+.contact p a {
+    text-decoration: none;
+    color: #FFF;
+}
+
 .contact p,
 .copyright p {
     color: #FFF
@@ -459,5 +426,5 @@ hr {
     margin: 0 0 50px;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.15);
-    border:none;
+    border: none;
 }
